@@ -9,17 +9,18 @@
 /* Begin PBXBuildFile section */
 		8D5A6BF428802C9D007B5277 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A6BF328802C9D007B5277 /* AppDelegate.swift */; };
 		8D5A6BF628802C9D007B5277 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A6BF528802C9D007B5277 /* SceneDelegate.swift */; };
-		8D5A6BF828802C9D007B5277 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A6BF728802C9D007B5277 /* ViewController.swift */; };
+		8D5A6BF828802C9D007B5277 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A6BF728802C9D007B5277 /* MainView.swift */; };
 		8D5A6BFB28802C9D007B5277 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A6BF928802C9D007B5277 /* Main.storyboard */; };
 		8D5A6BFD28802C9E007B5277 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A6BFC28802C9E007B5277 /* Assets.xcassets */; };
 		8D5A6C0028802C9E007B5277 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D5A6BFE28802C9E007B5277 /* LaunchScreen.storyboard */; };
 		8D5A6C1428802CD8007B5277 /* demo_combine_mvvm_model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5A6C0C28802CD8007B5277 /* demo_combine_mvvm_model.framework */; };
-		8D5A6C1B28802CD8007B5277 /* demo_combine_mvvm_modelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A6C1A28802CD8007B5277 /* demo_combine_mvvm_modelTests.swift */; };
 		8D5A6C1F28802CD8007B5277 /* demo_combine_mvvm_model.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5A6C0C28802CD8007B5277 /* demo_combine_mvvm_model.framework */; };
 		8D5A6C2028802CD8007B5277 /* demo_combine_mvvm_model.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8D5A6C0C28802CD8007B5277 /* demo_combine_mvvm_model.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8D5A6C2A28802D0C007B5277 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A6C2928802D0C007B5277 /* Person.swift */; };
-		8D5A6C2B28802D0C007B5277 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A6C2928802D0C007B5277 /* Person.swift */; };
-		8D5A6C2C28802D0C007B5277 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D5A6C2928802D0C007B5277 /* Person.swift */; };
+		8D7D5DE3288060E70042C7A4 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D5DE2288060E70042C7A4 /* NewsViewModel.swift */; };
+		8D7D5DE6288061800042C7A4 /* NewsAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D5DE5288061800042C7A4 /* NewsAPI.swift */; };
+		8D7D5DE92880634C0042C7A4 /* URLComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D5DE82880634C0042C7A4 /* URLComponents.swift */; };
+		8D7D5DEB288070300042C7A4 /* NewsDataPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D5DEA288070300042C7A4 /* NewsDataPublisher.swift */; };
+		8D7D5DED288072A80042C7A4 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7D5DEC288072A80042C7A4 /* News.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,15 +65,18 @@
 		8D5A6BF028802C9D007B5277 /* demo-combine-mvvm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "demo-combine-mvvm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5A6BF328802C9D007B5277 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D5A6BF528802C9D007B5277 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8D5A6BF728802C9D007B5277 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8D5A6BF728802C9D007B5277 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		8D5A6BFA28802C9D007B5277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D5A6BFC28802C9E007B5277 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D5A6BFF28802C9E007B5277 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D5A6C0128802C9E007B5277 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D5A6C0C28802CD8007B5277 /* demo_combine_mvvm_model.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = demo_combine_mvvm_model.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D5A6C1328802CD8007B5277 /* demo-combine-mvvm-modelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "demo-combine-mvvm-modelTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D5A6C1A28802CD8007B5277 /* demo_combine_mvvm_modelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = demo_combine_mvvm_modelTests.swift; sourceTree = "<group>"; };
-		8D5A6C2928802D0C007B5277 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		8D7D5DE2288060E70042C7A4 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
+		8D7D5DE5288061800042C7A4 /* NewsAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsAPI.swift; sourceTree = "<group>"; };
+		8D7D5DE82880634C0042C7A4 /* URLComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLComponents.swift; sourceTree = "<group>"; };
+		8D7D5DEA288070300042C7A4 /* NewsDataPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDataPublisher.swift; sourceTree = "<group>"; };
+		8D7D5DEC288072A80042C7A4 /* News.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,8 +110,6 @@
 			isa = PBXGroup;
 			children = (
 				8D5A6BF228802C9D007B5277 /* demo-combine-mvvm */,
-				8D5A6C0D28802CD8007B5277 /* demo-combine-mvvm-model */,
-				8D5A6C1928802CD8007B5277 /* demo-combine-mvvm-modelTests */,
 				8D5A6BF128802C9D007B5277 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -125,37 +127,74 @@
 		8D5A6BF228802C9D007B5277 /* demo-combine-mvvm */ = {
 			isa = PBXGroup;
 			children = (
-				8D5A6BF328802C9D007B5277 /* AppDelegate.swift */,
-				8D5A6BF528802C9D007B5277 /* SceneDelegate.swift */,
-				8D5A6BF728802C9D007B5277 /* ViewController.swift */,
+				8D7D5DE42880616A0042C7A4 /* API */,
+				8D5A6C2D28802F69007B5277 /* App */,
+				8D90339B2880335700E29203 /* Models */,
+				8D7D5DE1288060D10042C7A4 /* ViewModel */,
+				8D5A6C2E28802F79007B5277 /* Views */,
+				8D5A6C2F28802F93007B5277 /* Supporting Files */,
+				8D7D5DE7288063380042C7A4 /* Extensions */,
 				8D5A6BF928802C9D007B5277 /* Main.storyboard */,
-				8D5A6BFC28802C9E007B5277 /* Assets.xcassets */,
-				8D5A6BFE28802C9E007B5277 /* LaunchScreen.storyboard */,
-				8D5A6C0128802C9E007B5277 /* Info.plist */,
 			);
 			path = "demo-combine-mvvm";
 			sourceTree = "<group>";
 		};
-		8D5A6C0D28802CD8007B5277 /* demo-combine-mvvm-model */ = {
+		8D5A6C2D28802F69007B5277 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				8D5A6C2828802CF1007B5277 /* Models */,
+				8D5A6BF328802C9D007B5277 /* AppDelegate.swift */,
+				8D5A6BF528802C9D007B5277 /* SceneDelegate.swift */,
 			);
-			path = "demo-combine-mvvm-model";
+			path = App;
 			sourceTree = "<group>";
 		};
-		8D5A6C1928802CD8007B5277 /* demo-combine-mvvm-modelTests */ = {
+		8D5A6C2E28802F79007B5277 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				8D5A6C1A28802CD8007B5277 /* demo_combine_mvvm_modelTests.swift */,
+				8D5A6BF728802C9D007B5277 /* MainView.swift */,
 			);
-			path = "demo-combine-mvvm-modelTests";
+			path = Views;
 			sourceTree = "<group>";
 		};
-		8D5A6C2828802CF1007B5277 /* Models */ = {
+		8D5A6C2F28802F93007B5277 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				8D5A6C2928802D0C007B5277 /* Person.swift */,
+				8D5A6BFE28802C9E007B5277 /* LaunchScreen.storyboard */,
+				8D5A6BFC28802C9E007B5277 /* Assets.xcassets */,
+				8D5A6C0128802C9E007B5277 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8D7D5DE1288060D10042C7A4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8D7D5DE2288060E70042C7A4 /* NewsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		8D7D5DE42880616A0042C7A4 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8D7D5DE5288061800042C7A4 /* NewsAPI.swift */,
+				8D7D5DEA288070300042C7A4 /* NewsDataPublisher.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		8D7D5DE7288063380042C7A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8D7D5DE82880634C0042C7A4 /* URLComponents.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8D90339B2880335700E29203 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8D7D5DEC288072A80042C7A4 /* News.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -304,10 +343,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D5A6BF828802C9D007B5277 /* ViewController.swift in Sources */,
+				8D5A6BF828802C9D007B5277 /* MainView.swift in Sources */,
 				8D5A6BF428802C9D007B5277 /* AppDelegate.swift in Sources */,
-				8D5A6C2A28802D0C007B5277 /* Person.swift in Sources */,
+				8D7D5DED288072A80042C7A4 /* News.swift in Sources */,
+				8D7D5DE6288061800042C7A4 /* NewsAPI.swift in Sources */,
+				8D7D5DE92880634C0042C7A4 /* URLComponents.swift in Sources */,
 				8D5A6BF628802C9D007B5277 /* SceneDelegate.swift in Sources */,
+				8D7D5DEB288070300042C7A4 /* NewsDataPublisher.swift in Sources */,
+				8D7D5DE3288060E70042C7A4 /* NewsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -315,7 +358,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D5A6C2B28802D0C007B5277 /* Person.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,8 +365,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D5A6C2C28802D0C007B5277 /* Person.swift in Sources */,
-				8D5A6C1B28802CD8007B5277 /* demo_combine_mvvm_modelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -485,14 +525,13 @@
 		8D5A6C0528802C9E007B5277 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = RMFRRSQ9CJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "demo-combine-mvvm/Info.plist";
+				INFOPLIST_FILE = "demo-combine-mvvm/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -502,7 +541,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "yuhsuan.demo-combine-mvvm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -514,14 +553,13 @@
 		8D5A6C0628802C9E007B5277 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_TEAM = RMFRRSQ9CJ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "demo-combine-mvvm/Info.plist";
+				INFOPLIST_FILE = "demo-combine-mvvm/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -531,7 +569,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "yuhsuan.demo-combine-mvvm";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -545,7 +583,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RMFRRSQ9CJ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -559,7 +597,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "yuhsuan.demo-combine-mvvm-model";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -577,7 +615,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = RMFRRSQ9CJ;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -591,7 +629,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "yuhsuan.demo-combine-mvvm-model";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -606,7 +644,7 @@
 		8D5A6C2628802CD8007B5277 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RMFRRSQ9CJ;
@@ -624,7 +662,7 @@
 		8D5A6C2728802CD8007B5277 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RMFRRSQ9CJ;
