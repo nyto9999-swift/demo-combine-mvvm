@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>demo-combine-mvvm-model.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>demo-combine-mvvm.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
