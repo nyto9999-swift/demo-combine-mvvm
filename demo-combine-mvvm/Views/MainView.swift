@@ -2,7 +2,6 @@
 import Combine
 
 class MainView: UIViewController {
-  
 //  
 //  let publisher = NewsService()
   var subscription = Set<AnyCancellable>()
@@ -11,23 +10,16 @@ class MainView: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    let api = NewsAPI()
-    print(api.urlComponents)
     
-    viewModel.fetchNews()
-    
-    viewModel.$news.sink { new in
-      print(new)
+    viewModel.fetchNews().sink { completion in
+      print(completion)
+    } receiveValue: { news in
+      print(news)
     }.store(in: &subscription)
-    
   }
   
   override func viewDidAppear(_ animated: Bool) {
-//    let sub = publisher.publisher()
-//      .receive(on: DispatchQueue.main)
-//      .sink(receiveCompletion: {print("completion: \($0)")},
-//            receiveValue: {print("values: \($0)")})
-//      .store(in: &subscription)
+    
   }
 
 
