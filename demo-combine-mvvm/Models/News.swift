@@ -1,38 +1,29 @@
 import Foundation
-
-struct Article: Codable {
-  var title: String
-}
-
+ 
 struct News: Codable {
-  var status:String
-  var totalResults: Int
-  var articles: [Article] = [Article]()
   
-   enum NewsCodingKeys: String, CodingKey { //news
+  
+  enum NewsCodingKeys: String, CodingKey {
     case status, totalResults, articles
   }
-   
-  static let error = News(status: "error", totalResults: 0)
   
- 
+  var status:String = ""
+  var totalResults:Int = 0
+  var articles = [Article]()
+  static let error = News()
   
-  public init(status:String = "", totalResults:Int = 0) {
-    self.status = status
-    self.totalResults = totalResults
-    self.articles = [Article]()
-  }
-  
+  public init(){}
   public init(from decoder: Decoder) throws {
-    let container = try decoder.container(keyedBy: NewsCodingKeys.self)
+    
+    guard let container = try? decoder.container(keyedBy: NewsCodingKeys.self)
+    else { throw DecodeError.fail }
+    
     self.status = try container.decode(String.self, forKey: .status)
     self.totalResults = try container.decode(Int.self, forKey: .totalResults)
     self.articles = try container.decode([Article].self, forKey: NewsCodingKeys.articles)
   }
-  
-  enum DecodeError: Error {
-    case fail
-  }
 }
+
+
 
 

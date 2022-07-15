@@ -4,9 +4,9 @@ import Combine
 final class NewsViewModel: ObservableObject {
   
   @Published var news = News()
-  var subscriptions = Set<AnyCancellable>()
   private static let decoder = JSONDecoder()
   private let newsPublisher: NewsDataPublisher
+  
   public init(newsDataPublisher: NewsDataPublisher = NewsAPI()) {
     self.newsPublisher = newsDataPublisher
   }
