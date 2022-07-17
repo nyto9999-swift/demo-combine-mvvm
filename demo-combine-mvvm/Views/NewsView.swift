@@ -26,11 +26,13 @@ class NewsView: UIViewController {
 //      self.news = news
 //      self.tableView.reloadData()
 //    }.store(in: &subscription)
-    viewModel.fetchNews()
+//    viewModel.fetchNews()
+      
+    
+    viewModel.fetchNews(with: ["q":"apple"])
       .receive(on: DispatchQueue.main)
       .assign(to:\.news, on: self)
       .store(in: &subscriptions)
-    
   }
   
   override func viewDidAppear(_ animated: Bool) {
