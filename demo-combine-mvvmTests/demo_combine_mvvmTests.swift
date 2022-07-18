@@ -3,10 +3,11 @@ import XCTest
 
 class demo_combine_mvvmTests: XCTestCase {
     
+  var newClient:NewsClient!
     
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
+  override func setUp() {
+    newClient = NewsClient()
+  }
 
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
